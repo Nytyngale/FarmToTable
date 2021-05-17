@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url('images/cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(10, 10, 10, 0.3);
+}
+
+.navbar{
+    top:160px;
+
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+  }
+  
+.navbar li {
+    display: inline-block;
+  }
+  
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+}
+
+nav h2{
+    color: white;
+}
+
+nav li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav li span{
+    padding-left: 5px;
+}
+
+
+li a{
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    color: white;
+}
+
+
+.cart a{
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -50px;
+    margin-left: 10%;
+    background: white;
+    border-style: solid;
+    border-width: 10px;
+    border-color: olivedrab;
+    width: 80%;
+}
+
+.image1{
+    margin-left: 3.5%;
+    width:250px;
+    height: 250px;
+    position: relative;
+
+}
+
+.container,
+.products-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -25px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+img{
+    position: absolute;
+    max-width: 145%;
+    width: 145%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 70px;
+}
+.image{
+    margin-right: 20px;
+    margin-left: 20px;
+    width:250px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.add-item{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+.add-cart{
+    position: absolute;
+    width: 100%;
+    background-color: darkgrey;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+    bottom: 8px;
+    left: 16px;
+}
+
+.vegsec{
+    text-align: center;
+}
+
+.fruitsec{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4,
+.image:hover .cart5,
+.image:hover .cart6,
+.image:hover .cart7,
+.image:hover .cart8,
+.image:hover .cart9,
+.image:hover .cart10,
+.image:hover .cart11,
+.image:hover .cart12,
+.image:hover .cart13,
+.image:hover .cart14,
+.image:hover .cart15,
+.image:hover .cart16,
+.image:hover .cart17,
+.image:hover .cart18,
+.image:hover .cart19,
+.image:hover .cart20
+ {
+    bottom: 60px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/*--------Cart Page---------*/
+
+.products-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: whitesmoke;
+    color: black;
+
+}
+
+.product-title{
+    width:45%;
+}
+
+.product-header{
+    width: 100%;
+    max-width: 650px;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+
+.products {
+    width: 100%;
+    flex-wrap: wrap;
+    left: 15px;
+    display: inline;
+    overflow: hidden;
+}
+
+.basketTotalContainer{
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30%;
+}
+
+.basketTotal{
+    width: 10%;
+}
+
+.product-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+.product-header li {
+    display: inline-block;
+    width: 100px;
+    font-size: x-large;
+}
+
+.button1{
+
+    position:center;
+    background-color:royalblue;
+    font-size: 14pt;
+    margin-left: 58%;
+    padding: 6px;
+}
+
+.button1 a {
+    color: white;
+    text-decoration: none;
+}
+
+/*----------About us page------------------*/
+
+form{
+    font-family: 'Popins',sans-serif;
+
+}
+
+input[type="submit"]{
+    background-color: royalblue;
+    color:white;
+    margin-bottom: 0.5in;
+    font-size: 12pt;
+}
+
+/*----------Home----------------------*/
+
+.welcome{
+    background-color: #333;
+    height: 15%;
+    color:#fff;
+    text-align:center;
+    height:90px;
+    
+}
+
+button[type = "submit"]{
+   background-color: royalblue;
+   color:white;
+   font-size: 12pt;
+   cursor:pointer;
+
+}
+
+.featured{
+    text-align: center;
+}
+
+.menu_link{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.menu_link:link,.menu_link:visited{
+    color: var(--black);
+    padding:1rem;
+}
+
+.button{
+
+    position:center;
+    background-color:royalblue;
+    font-size: 14pt;
+    margin-left: 44%;
+    padding: 6px;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/*--------------login-----------------*/
+
+
+.form { box-sizing:border-box;
+    background-color:lightgray;
+    position: center;
+    width:400px;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+    margin-left: 39%;
+}
+
+.login-form {max-width: 350 px;
+    margin: 0 auto;
+    padding: 15 px;}
+
+label   {position:inherit;
+        color:black;
+        width: 100%;
+        font-weight: text-align;
+        display:inherit;
+        margin: 0;
+        text-align: center;
+}
+input[type = "text"]{
+     
+    background:white;
+    width: 100%;
+    margin:  0;
+    padding: 6px 10px;
+    box-sizing:border-box;
+    font-size: 12pt;
+    border-radius: 4px;
+}  
+
+input[type = "password"]{
+    background:white;
+    width: 100%;
+    margin: 0;
+    padding: 6px 10px;
+    box-sizing:border-box;
+    font-size: 12pt;
+    border-radius: 4px ;
+}
+input[type = "email"]{
+    background:white;
+    width: 100%;
+    margin: 0;
+    padding: 6px 10px;
+    box-sizing:border-box;
+    font-size: 12pt;
+    border-radius: 4px;
+}
+
+/*-----register------*/
+.form1 { box-sizing:border-box;
+    background-color:lightgray;
+    position: center;
+    width:400px;
+    height: 550px;
+    padding: 50px;
+    text-align: center;
+    margin-left: 39%;
+}
+/*-----footer-----*/
+
+footer{
+   text-align: center;
+   background-color: green;
+   margin-top: 50px;
+   padding: 30px;
+
+}
+
+footer a{
+    text-decoration: none;
+}
+

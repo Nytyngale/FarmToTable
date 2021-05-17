@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href="stylesheet.css">
+    <title>Register</title>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <nav>
+            <h2>Farm To Table</h2>
+            <ul>
+                <li><a href="Home.html"><b>Home</a></b></li>
+                <li class = "login">
+                    <a href="LogIn.html"><b>Log In</b></a>
+                </li>           
+            </ul>
+        </nav>
+    </header>
+    <div class="form1">
+        <form action= "Home.html" method="post">
+        <div class = "login-page">
+            <label>E-mail</label><input type = "email" id = "email" required size= "30"
+            maxlength = "30"><br><br>
+            <label>Name </label><input type ="text"
+            id = "Name" maxlength = "20" required size="20" ><br><br>
+            <label>Phone Number </label><input type ="text"
+            id = "phone_number" maxlength = "20" required size="20" ><br><br>
+            <label>Username </label><input type ="text"
+            id = "username" maxlength = "20" required size="20" ><br><br>
+            <label>Password</label><input type="password"
+            id = "password" required size= "20" maxlenght= "20" ><br><br>
+            <button type ="submit" onclick="complete()" ><a href="Home.html"></a>Sign in</button>
+        </div>
+        </form>
+    </div>
+    <script type = "text/javascript">
+        function complete(){
+            alert("Thanks for registering! .\n " + 
+                    "Press OK to go back to the home page.");
+        }
+    </script>
+</body>
